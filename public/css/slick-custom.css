@@ -1,0 +1,69 @@
+.rtl-slider-flex {
+  width: 100%;
+  /* height: 30em; */
+}
+/* Necessary styles */  
+.rtl-slider-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.rtl-slider-flex .rtl-slider {
+  width: 85%;
+  margin-left: 2%;
+}
+.rtl-slider-flex .rtl-slider-nav {
+  width: 15%;
+  margin-top: -2px;
+}
+.rtl-slider-flex .rtl-slider-nav .rtl-slider-slide {
+  padding-top: 90%;
+  margin-bottom: 4px;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 4px solid #FFFFFF;
+}
+.rtl-slider-flex .rtl-slider-nav .slick-slide.slick-current.slick-active .rtl-slider-slide {
+  opacity: 1;
+}
+.rtl-slider-flex .rtl-slider-slide {
+  background: #0b69b7 url("") no-repeat center/cover;
+  padding-top: 56.25%;
+}
+
+.rtl-slider-flex .thumb-prev,
+.rtl-slider-flex .thumb-next {
+  position: absolute;
+  bottom: 20px;
+  height: 30px;
+  left: 50px;
+  width: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: url(../images/icon/next-banner.svg) no-repeat scroll;
+  transform: rotate(90deg);
+  background-size: 16px 28px;
+  background-position: center center;
+  background-color: #00000033;
+  display: none !important;
+}
+.rtl-slider-flex .thumb-prev {
+  transform: rotate(-90deg);
+  left: 0;
+  
+}
+
+.rtl-slider-nav .slick-current .rtl-slider-slide{
+  border: 4px solid #2E52B2;
+}
+
+.slick-vertical .slick-slide {
+  border: 0;
+}
